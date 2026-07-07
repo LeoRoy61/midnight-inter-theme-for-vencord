@@ -1,0 +1,8 @@
+# System files
+.DS_Store
+Thumbs.db
+
+# Antigravity/Agent temp files
+.agents/
+.system_generated/
+*.tmp
