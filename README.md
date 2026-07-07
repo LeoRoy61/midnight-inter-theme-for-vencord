@@ -8,7 +8,6 @@ A premium, modern dark Discord theme customized for **FC Internazionale Milano (
 
 - **Nerazzurri Identity**: Fully themed with Inter's signature deep dark blue-black (`#02040a`) backgrounds, electric blue highlights, and brand gold accents.
 - **Full-Color Inter Logo**: Direct Messages / Home button replaced with the official, full-color Inter 2021 monogram SVG with a 360-degree rotation animation on hover.
-- **San Siro Stadium Backdrop**: Translucent glassmorphism panels showing a beautiful view of Stadio Giuseppe Meazza (San Siro) at night.
 - **Glowing Scrollbars**: Inter Blue scrollbars that glow and change to Inter Gold when hovered.
 - **Subtle Watermark**: A high-class, semi-transparent Inter Milan monogram watermark in the chat background area.
 - **Custom Badges**: Gold-colored mention badges and electric blue unread notifications.

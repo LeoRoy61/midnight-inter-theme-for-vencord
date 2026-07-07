@@ -48,16 +48,11 @@ body {
     --custom-dms-background: color;
     --dms-background-color: linear-gradient(135deg, var(--bg-4), var(--blue-5));
 
-    /* background image options */
-    --background-image: on; /* on: enable background image for a premium look */
-    --background-image-url: url('https://upload.wikimedia.org/wikipedia/commons/e/e0/Stadio_Giuseppe_Meazza_San_Siro.jpg'); /* Beautiful atmospheric San Siro Stadium background */
-
-    /* transparency/blur options - tweaked for stunning glassmorphism */
-    --transparency-tweaks: on;
+    /* transparency/blur options */
+    --transparency-tweaks: off;
     --remove-bg-layer: off;
-    --panel-blur: on;
-    --blur-amount: 16px;
-    --bg-floating: hsla(234, 40%, 6%, 0.85); /* backdrop for dropdown/popup elements */
+    --panel-blur: off;
+    --bg-floating: hsla(234, 40%, 6%, 0.95); /* backdrop for dropdown/popup elements */
 
     /* chatbar options */
     --custom-chatbar: separated; /* separated: chatbar floating/separated from chat for modern aesthetics */
@@ -223,7 +218,4 @@ body {
     border-left: 3px solid var(--yellow-2);
 }
 
-/* 6. Background Image Force (bypasses browser compatibility issues with CSS style queries) */
-#app-mount [class*="bg__"] {
-    background: var(--background-image-url) no-repeat center/cover !important;
-}
+
