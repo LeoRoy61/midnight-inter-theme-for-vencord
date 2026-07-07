@@ -19,9 +19,8 @@ A premium, modern dark Discord theme customized for **FC Internazionale Milano (
 1. In Discord, open **User Settings** (gear icon) -> **Themes** (under the Vencord section).
 2. Under **Online Themes**, paste the following URL:
    ```
-   https://raw.githubusercontent.com/[YOUR_GITHUB_USERNAME]/[YOUR_REPO_NAME]/main/midnight-inter.theme.css
+   https://raw.githubusercontent.com/LeoRoy61/midnight-inter-theme-for-vencord/main/midnight-inter.theme.css
    ```
-   *(Note: Remember to replace `[YOUR_GITHUB_USERNAME]` and `[YOUR_REPO_NAME]` with your actual GitHub username and repository name once pushed.)*
 3. Press **Enter** / click add, and enable the theme.
 
 ### Method 2: Quick CSS
