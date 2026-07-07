@@ -2,6 +2,8 @@
 
 ![Preview](preview.png)
 
+[![Latest Release](https://img.shields.io/github/v/release/LeoRoy61/midnight-inter-theme-for-vencord?style=for-the-badge&color=0057B8&label=Download)](https://github.com/LeoRoy61/midnight-inter-theme-for-vencord/releases/latest)
+
 A premium, modern dark Discord theme customized for **FC Internazionale Milano (Inter Milan)**. Based on the elegant [Midnight Theme](https://github.com/refact0r/midnight-discord) by refact0r.
 
 ## Features
