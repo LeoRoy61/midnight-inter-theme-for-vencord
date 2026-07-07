@@ -199,8 +199,9 @@ body {
     color: var(--bg-4) !important;
     font-weight: bold !important;
 }
-/* Unread channel pill indicators (Inter Blue) */
-div[class*="unread__"] {
+/* Unread channel pill indicators (Inter Blue) - restricted to row wrappers to avoid coloring the top/bottom unread bars */
+[class*="wrapper_"] [class*="unread__"],
+[class*="channel_"] [class*="unread__"] {
     background-color: var(--blue-2) !important;
 }
 /* Divider for unread messages in chat */
