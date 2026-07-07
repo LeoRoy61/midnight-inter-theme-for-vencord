@@ -26,7 +26,7 @@ A premium, modern dark Discord theme customized for **FC Internazionale Milano (
 3. The theme will load and apply automatically!
 
 ### Method 2: Local Installation (Themes Folder)
-1. Download the `midnight-inter.theme.css` file from this repository.
+1. Download the theme file: [midnight-inter.theme.css](https://raw.githubusercontent.com/LeoRoy61/midnight-inter-theme-for-vencord/main/midnight-inter.theme.css) (Right-click and choose "Save link as...", or click it and press Ctrl+S).
 2. In Discord, go to **User Settings** -> **Themes** (under the Vencord section).
 3. Click the **Open Themes Folder** button.
 4. Drag and drop or paste the `midnight-inter.theme.css` file into the folder that just opened.
@@ -40,7 +40,7 @@ A premium, modern dark Discord theme customized for **FC Internazionale Milano (
 ---
 
 ## BetterDiscord Installation
-1. Download the `midnight-inter.theme.css` file from this repository.
+1. Download the theme file: [midnight-inter.theme.css](https://raw.githubusercontent.com/LeoRoy61/midnight-inter-theme-for-vencord/main/midnight-inter.theme.css) (Right-click and choose "Save link as...", or click it and press Ctrl+S).
 2. Go to Discord **User Settings** -> **Themes** (under BetterDiscord).
 3. Click **Open Themes Folder**.
 4. Drag and drop the downloaded `.theme.css` file into that folder.
