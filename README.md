@@ -1,4 +1,4 @@
-# Midnight Inter Milan Theme 🔵⚫⭐
+# Midnight Inter Milan Theme 🔵⚫⭐⭐
 
 ![Preview](preview.png)
 
