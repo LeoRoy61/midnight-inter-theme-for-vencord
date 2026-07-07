@@ -1,8 +1,8 @@
 /**
  * @name Midnight Inter Milan
- * @description A premium dark Discord theme themed around FC Internazionale Milano (Inter Milan), featuring the iconic Nerazzurri colors (black & electric blue) with elegant gold accents, custom watermark, and smooth hover animations.
- * @author refact0r & Antigravity
- * @version 2.1.2
+ * @description A premium dark Discord theme themed around FC Internazionale Milano (Inter Milan), featuring the iconic Nerazzurri colors (black & electric blue) with elegant gold accents.
+ * @author refact0r & LeoRoy61
+ * @version 2.1.3
  * @invite nz87hXyvcy
  * @website https://github.com/refact0r/midnight-discord
  * @source https://github.com/refact0r/midnight-discord/blob/master/themes/midnight.theme.css
@@ -200,7 +200,7 @@ body {
     font-weight: bold !important;
 }
 /* Unread channel pill indicators (Inter Blue) */
-[class*="unread_"] {
+div[class*="unread__"] {
     background-color: var(--blue-2) !important;
 }
 /* Divider for unread messages in chat */
