@@ -1,0 +1,223 @@
+/**
+ * @name Midnight Inter Milan
+ * @description A premium dark Discord theme themed around FC Internazionale Milano (Inter Milan), featuring the iconic Nerazzurri colors (black & electric blue) with elegant gold accents, custom watermark, and smooth hover animations.
+ * @author refact0r & Antigravity
+ * @version 2.1.2
+ * @invite nz87hXyvcy
+ * @website https://github.com/refact0r/midnight-discord
+ * @source https://github.com/refact0r/midnight-discord/blob/master/themes/midnight.theme.css
+ * @authorId 508863359777505290
+*/
+
+/* import theme modules */
+@import url('https://refact0r.github.io/midnight-discord/build/midnight.css');
+
+body {
+    /* font options */
+    --font: 'figtree'; /* change to '' for default discord font */
+    --code-font: ''; /* change to '' for default discord font */
+    font-weight: 400; /* normal text font weight. DOES NOT AFFECT BOLD TEXT */
+
+    /* sizes */
+    --gap: 12px; /* spacing between panels */
+    --divider-thickness: 4px; /* thickness of unread messages divider and highlighted message borders */
+    --border-thickness: 1px; /* thickness of borders around main panels. DOES NOT AFFECT OTHER BORDERS */
+
+    /* animation/transition options */
+    --animations: on; /* off: disable animations/transitions, on: enable animations/transitions */
+    --list-item-transition: 0.25s cubic-bezier(0.4, 0, 0.2, 1); /* smooth transition for list items */
+    --dms-icon-svg-transition: 0.4s cubic-bezier(0.4, 0, 0.2, 1); /* transition for the dms icon */
+    --border-hover-transition: 0.25s ease; /* transition for borders when hovered */
+
+    /* top bar options */
+    --top-bar-height: var(--gap); /* height of the top bar */
+    --top-bar-button-position: titlebar; /* off: default position, hide: hide buttons completely, titlebar: move inbox button to channel titlebar */
+    --top-bar-title-position: off; /* off: default centered position */
+    --subtle-top-bar-title: off; /* off: default, on: hide the icon and use subtle text color */
+
+    /* window controls */
+    --custom-window-controls: on; /* off: default window controls, on: custom window controls */
+    --window-control-size: 14px; /* size of custom window controls */
+
+    /* dms button options (Inter Monogram Logo custom icon settings) */
+    --custom-dms-icon: custom;
+    --dms-icon-svg-url: url('https://upload.wikimedia.org/wikipedia/commons/0/05/FC_Internazionale_Milano_2021.svg');
+    --dms-icon-svg-size: 90%;
+    --dms-icon-color-before: var(--blue-2); /* fallback icon color */
+    --dms-icon-color-after: var(--yellow-2); /* fallback icon hover color */
+    --custom-dms-background: color;
+    --dms-background-color: linear-gradient(135deg, var(--bg-4), var(--blue-5));
+
+    /* background image options */
+    --background-image: on; /* on: enable background image for a premium look */
+    --background-image-url: url('https://upload.wikimedia.org/wikipedia/commons/e/e0/Stadio_Giuseppe_Meazza_San_Siro.jpg'); /* Beautiful atmospheric San Siro Stadium background */
+
+    /* transparency/blur options - tweaked for stunning glassmorphism */
+    --transparency-tweaks: on;
+    --remove-bg-layer: off;
+    --panel-blur: on;
+    --blur-amount: 16px;
+    --bg-floating: hsla(234, 40%, 6%, 0.85); /* backdrop for dropdown/popup elements */
+
+    /* chatbar options */
+    --custom-chatbar: separated; /* separated: chatbar floating/separated from chat for modern aesthetics */
+    --chatbar-height: 47px;
+
+    /* other options */
+    --small-user-panel: on; /* smaller user panel like in old discord */
+}
+
+/* color options - Nerazzurri & Gold Identity */
+:root {
+    --colors: on; /* off: discord default colors, on: midnight custom colors */
+
+    /* text colors */
+    --text-0: var(--bg-4); /* text on colored elements */
+    --text-1: hsl(234, 45%, 95%); /* light white-blue text */
+    --text-2: hsl(234, 25%, 75%); /* headings and important text */
+    --text-3: hsl(234, 20%, 65%); /* normal text */
+    --text-4: hsl(234, 15%, 45%); /* icon buttons and channels */
+    --text-5: hsl(234, 15%, 30%); /* muted channels/chats and timestamps */
+
+    /* background and dark colors (Nerazzurri: Deep Black-Blue) */
+    --bg-1: hsla(234, 20%, 16%, 0.9); /* dark buttons when clicked */
+    --bg-2: hsla(234, 25%, 11%, 0.85); /* dark buttons */
+    --bg-3: hsla(234, 30%, 7%, 0.8); /* spacing, secondary elements */
+    --bg-4: hsla(234, 45%, 4%, 0.75); /* main transparent panel background */
+    --hover: hsla(234, 90%, 55%, 0.08); /* channels and buttons when hovered (soft electric blue) */
+    --active: hsla(234, 90%, 55%, 0.16); /* channels and buttons when clicked or selected */
+    --active-2: hsla(234, 90%, 55%, 0.24); /* extra state for transparent buttons */
+    --message-hover: hsla(234, 100%, 100%, 0.015); /* messages when hovered */
+
+    /* accent colors (Inter Intense Blue & Gold) */
+    --accent-1: var(--blue-2); /* links and other accent text */
+    --accent-2: var(--blue-2); /* small accent elements */
+    --accent-3: var(--blue-3); /* accent buttons */
+    --accent-4: var(--blue-4); /* accent buttons when hovered */
+    --accent-5: var(--blue-5); /* accent buttons when clicked */
+    --accent-new: var(--blue-2); /* stuff that's normally red like mute/deafen buttons, using electric blue instead */
+    --mention: linear-gradient(to right, color-mix(in hsl, var(--yellow-2), transparent 92%) 40%, transparent); /* background of messages that mention you (Gold Tint) */
+    --mention-hover: linear-gradient(to right, color-mix(in hsl, var(--yellow-2), transparent 96%) 40%, transparent); /* gold mention hover */
+    --reply: linear-gradient(to right, color-mix(in hsl, var(--blue-2), transparent 92%) 40%, transparent); /* reply background (Blue Tint) */
+    --reply-hover: linear-gradient(to right, color-mix(in hsl, var(--blue-2), transparent 96%) 40%, transparent); /* reply hover */
+
+    /* status indicator colors */
+    --online: var(--green-2);
+    --dnd: var(--red-2);
+    --idle: var(--yellow-2);
+    --streaming: var(--purple-2);
+    --offline: var(--text-4);
+
+    /* border colors */
+    --border-light: var(--hover); /* general light border color */
+    --border: var(--active); /* general normal border color */
+    --border-hover: var(--blue-3); /* border color of panels when hovered (glowing blue) */
+    --button-border: hsla(234, 90%, 55%, 0.15); /* blue tinted border for buttons */
+
+    /* base colors - Tuned for Inter Milan (electric blues & brand gold) */
+    --red-1: oklch(75% 0.12 0);
+    --red-2: oklch(70% 0.12 0);
+    --red-3: oklch(65% 0.12 0);
+    --red-4: oklch(60% 0.12 0);
+    --red-5: oklch(55% 0.12 0);
+
+    --green-1: oklch(75% 0.11 170);
+    --green-2: oklch(70% 0.11 170);
+    --green-3: oklch(65% 0.11 170);
+    --green-4: oklch(60% 0.11 170);
+    --green-5: oklch(55% 0.11 160);
+
+    /* Inter Blue (Electric Blue OKLCH scale) */
+    --blue-1: oklch(80% 0.18 264);
+    --blue-2: oklch(70% 0.20 264); /* Primary Inter Blue */
+    --blue-3: oklch(62% 0.22 264);
+    --blue-4: oklch(54% 0.22 264);
+    --blue-5: oklch(45% 0.20 264);
+
+    /* Inter Gold (Brand Gold OKLCH scale) */
+    --yellow-1: oklch(85% 0.14 85);
+    --yellow-2: oklch(78% 0.16 85); /* Primary Inter Gold */
+    --yellow-3: oklch(70% 0.16 85);
+    --yellow-4: oklch(62% 0.16 85);
+    --yellow-5: oklch(55% 0.14 85);
+
+    --purple-1: oklch(75% 0.11 310);
+    --purple-2: oklch(70% 0.11 310);
+    --purple-3: oklch(65% 0.11 310);
+    --purple-4: oklch(60% 0.11 310);
+    --purple-5: oklch(55% 0.11 310);
+}
+
+/* ==========================================
+   Premium Inter Milan Customizations & Overrides
+   ========================================== */
+
+/* 1. Direct Messages Button - Full Color Inter Logo & Rotation Animation */
+[data-list-item-id='guildsnav___home'] [class*="childWrapper"]::before {
+    mask-image: none !important;
+    -webkit-mask-image: none !important;
+    background: url('https://upload.wikimedia.org/wikipedia/commons/0/05/FC_Internazionale_Milano_2021.svg') no-repeat center/contain !important;
+    background-color: transparent !important;
+    transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275) !important;
+}
+[data-list-item-id='guildsnav___home']:hover [class*="childWrapper"]::before,
+[class*="selected"][data-list-item-id='guildsnav___home'] [class*="childWrapper"]::before {
+    transform: rotate(360deg) scale(1.1) !important;
+}
+
+/* 2. Chat Watermark - Subtle Inter Logo Background Overlay */
+.chat_a7d72e::before {
+    content: "";
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+    width: 280px;
+    height: 280px;
+    background: url('https://upload.wikimedia.org/wikipedia/commons/0/05/FC_Internazionale_Milano_2021.svg') no-repeat center/contain;
+    opacity: 0.025; /* highly subtle so it doesn't disturb text */
+    pointer-events: none;
+    z-index: 0;
+}
+
+/* 3. Custom Scrollbars - Inter Blue to Inter Gold transition on hover */
+::-webkit-scrollbar-thumb {
+    background-color: var(--blue-3) !important;
+    border-radius: 8px !important;
+    transition: background-color 0.2s ease !important;
+}
+::-webkit-scrollbar-thumb:hover {
+    background-color: var(--yellow-2) !important;
+}
+::-webkit-scrollbar-track {
+    background-color: transparent !important;
+}
+
+/* 4. Mentions and Unread Badges - Branded Highlights */
+/* Mentions Badge (Gold with dark text) */
+.mention_b20dd9 {
+    background-color: var(--yellow-2) !important;
+    color: var(--bg-4) !important;
+    font-weight: bold !important;
+}
+/* Unread channel pill indicators (Inter Blue) */
+.unread_c43f37 {
+    background-color: var(--blue-2) !important;
+}
+/* Divider for unread messages in chat */
+.divider_fc5f50.isUnread_fc5f50 {
+    border-color: var(--blue-2) !important;
+}
+.unreadPill_fc5f50 {
+    background-color: var(--blue-2) !important;
+    color: #ffffff !important;
+}
+
+/* 5. Custom borders & visual flourishes */
+/* Selected Channel / Voice channel hover glow */
+.wrapper_d83b48.modeSelected_d83b48 .link_d83b48 {
+    border-left: 3px solid var(--blue-2);
+    background-color: var(--active) !important;
+}
+.wrapper_d83b48.modeUnreadImportant_d83b48 .link_d83b48 {
+    border-left: 3px solid var(--yellow-2);
+}
