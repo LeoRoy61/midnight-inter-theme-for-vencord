@@ -1,5 +1,7 @@
 # Midnight Inter Milan Theme 🔵⚫⭐
 
+![Preview](preview.png)
+
 A premium, modern dark Discord theme customized for **FC Internazionale Milano (Inter Milan)**. Based on the elegant [Midnight Theme](https://github.com/refact0r/midnight-discord) by refact0r.
 
 ## Features
