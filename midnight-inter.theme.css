@@ -166,7 +166,7 @@ body {
 }
 
 /* 2. Chat Watermark - Subtle Inter Logo Background Overlay */
-.chat_a7d72e::before {
+[class*="chatContent_"]::before {
     content: "";
     position: absolute;
     bottom: 30px;
@@ -174,7 +174,7 @@ body {
     width: 280px;
     height: 280px;
     background: url('https://upload.wikimedia.org/wikipedia/commons/0/05/FC_Internazionale_Milano_2021.svg') no-repeat center/contain;
-    opacity: 0.025; /* highly subtle so it doesn't disturb text */
+    opacity: 0.035; /* subtle watermark, slightly increased for visibility */
     pointer-events: none;
     z-index: 0;
 }
@@ -192,32 +192,37 @@ body {
     background-color: transparent !important;
 }
 
-/* 4. Mentions and Unread Badges - Branded Highlights */
+/* 4. Mentions and Unread Badges - Branded Highlights (using wildcards to prevent update breaks) */
 /* Mentions Badge (Gold with dark text) */
-.mention_b20dd9 {
+[class*="mention_"] {
     background-color: var(--yellow-2) !important;
     color: var(--bg-4) !important;
     font-weight: bold !important;
 }
 /* Unread channel pill indicators (Inter Blue) */
-.unread_c43f37 {
+[class*="unread_"] {
     background-color: var(--blue-2) !important;
 }
 /* Divider for unread messages in chat */
-.divider_fc5f50.isUnread_fc5f50 {
+[class*="divider_"][class*="isUnread_"] {
     border-color: var(--blue-2) !important;
 }
-.unreadPill_fc5f50 {
+[class*="unreadPill_"] {
     background-color: var(--blue-2) !important;
     color: #ffffff !important;
 }
 
 /* 5. Custom borders & visual flourishes */
 /* Selected Channel / Voice channel hover glow */
-.wrapper_d83b48.modeSelected_d83b48 .link_d83b48 {
+[class*="wrapper_"][class*="modeSelected_"] [class*="link_"] {
     border-left: 3px solid var(--blue-2);
     background-color: var(--active) !important;
 }
-.wrapper_d83b48.modeUnreadImportant_d83b48 .link_d83b48 {
+[class*="wrapper_"][class*="modeUnreadImportant_"] [class*="link_"] {
     border-left: 3px solid var(--yellow-2);
+}
+
+/* 6. Background Image Force (bypasses browser compatibility issues with CSS style queries) */
+#app-mount [class*="bg__"] {
+    background: var(--background-image-url) no-repeat center/cover !important;
 }
