@@ -19,23 +19,23 @@ A premium, modern dark Discord theme customized for **FC Internazionale Milano (
 
 ### Method 1: Online Theme Link (Recommended)
 1. In Discord, open **User Settings** (gear icon) -> **Themes** (under the Vencord section).
-2. Paste the following URL in the **Online Themes** text box:
+2. Paste the following URL in the **Online Themes** text area (one link per line):
    ```
    https://raw.githubusercontent.com/LeoRoy61/midnight-inter-theme-for-vencord/main/midnight-inter.theme.css
    ```
-3. Il tema verrà caricato e applicato automaticamente!
+3. The theme will load and apply automatically!
 
 ### Method 2: Local Installation (Themes Folder)
-1. Scarica il file `midnight-inter.theme.css` da questo repository.
-2. In Discord, vai su **Impostazioni utente** -> **Themes** (sotto la sezione Vencord).
-3. Clicca sul pulsante **Open Themes Folder** (Apri cartella temi).
-4. Trascina o incolla il file `midnight-inter.theme.css` all'interno della cartella appena aperta.
-5. Torna su Discord e abilita il tema **Midnight Inter Milan**.
+1. Download the `midnight-inter.theme.css` file from this repository.
+2. In Discord, go to **User Settings** -> **Themes** (under the Vencord section).
+3. Click the **Open Themes Folder** button.
+4. Drag and drop or paste the `midnight-inter.theme.css` file into the folder that just opened.
+5. Go back to Discord and enable the **Midnight Inter Milan** theme.
 
 ### Method 3: Quick CSS
-1. Copia l'intero contenuto del file [midnight-inter.theme.css](midnight-inter.theme.css).
-2. Vai su **Impostazioni utente** -> **Quick CSS** (sotto la sezione Vencord).
-3. Incolla il codice nella casella di testo e salva.
+1. Copy the entire contents of [midnight-inter.theme.css](midnight-inter.theme.css).
+2. Go to **User Settings** -> **Quick CSS** (under the Vencord section).
+3. Paste the code into the text area and save.
 
 ---
 
