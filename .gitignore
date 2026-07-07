@@ -6,3 +6,6 @@ Thumbs.db
 .agents/
 .system_generated/
 *.tmp
+
+# Exclude local publish script
+publish.ps1
