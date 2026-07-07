@@ -24,6 +24,8 @@ A premium, modern dark Discord theme customized for **FC Internazionale Milano (
    ```
 3. The theme will load and apply automatically!
 
+> **⚠️ Theme not loading?** This is a known Vencord quirk. If the theme doesn't appear after pasting the link, simply switch to another Vencord settings tab (e.g. **Updater** or **Cloud**) and then come back to **Themes**. This triggers the theme to load correctly.
+
 ### Method 2: Local Installation (Themes Folder)
 1. Download the theme file: [midnight-inter.theme.css](https://raw.githubusercontent.com/LeoRoy61/midnight-inter-theme-for-vencord/main/midnight-inter.theme.css) (Right-click and choose "Save link as...", or click it and press Ctrl+S).
 2. In Discord, go to **User Settings** -> **Themes** (under the Vencord section).
